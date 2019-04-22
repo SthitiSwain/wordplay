@@ -1,0 +1,23 @@
+<doctype html>
+<title>Edit Word</title>
+<h2>Edit Word</h2>
+<form method="post" action="/update">
+    <dl>
+    		<p>
+			<input name="sn" value="{{ row['sn'] }}" type="text" placeholder="word1" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputword1" value="{{ row['word1'] }}" type="text" placeholder="word1" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputword2" value="{{ row['word2'] }}" type="text" placeholder="word2" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputfullword" value="{{ row['fullword'] }}" type="text" placeholder="fullword" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		
+		<input type="submit" value="Submit">
+	</p>
+</form>
